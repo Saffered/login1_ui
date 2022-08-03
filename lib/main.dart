@@ -1,4 +1,7 @@
+
 import 'package:app_devolopment/home_page.dart';
+import 'package:app_devolopment/pdp.dart';
+import 'package:app_devolopment/test.dart';
 import 'package:app_devolopment/turistik_page.dart';
 import 'package:flutter/material.dart';
 
@@ -17,9 +20,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Homepage(),
+      home: PdpLoginUiPage(),
       routes: {
         Lessononepage.id: (context) => Lessononepage(),
+        PdpLoginUiPage.path:(context)=>PdpLoginUiPage(),
+        Testpage.id:(context)=> Testpage(),
+        Homepage.id: (context)=> Homepage(),
       },
     );
   }
